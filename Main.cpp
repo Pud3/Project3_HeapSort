@@ -89,7 +89,7 @@ void Heapify(int* numbers, int size, int root, long long& comparisons, long long
         Heapify(numbers, size, largest, comparisons, moves);
     }
 }
-
+// Heap sort main function
 void HeapSort(int* numbers, int size, long long& comparisons, long long& moves) {
     comparisons = 0;
     moves = 0;
@@ -144,6 +144,8 @@ int main() {
     TestHeapSort(allNumbers, 100);
     TestHeapSort(allNumbers, 1000);
     TestHeapSort(allNumbers, 5000);
+
+   
 
     return 0;
 }
