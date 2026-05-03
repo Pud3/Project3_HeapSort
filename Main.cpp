@@ -58,7 +58,7 @@ void CopyFirstN(int* source, int* destination, int n) {
         destination[i] = source[i];
     }
 }
-
+// Heapify restores max heap property
 void Heapify(int* numbers, int size, int root, long long& comparisons, long long& moves) {
     int largest = root;
     int left = 2 * root + 1;
